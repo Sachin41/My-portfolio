@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+.fsize-15 {
+  font-size: 15px !important;
+}
+.Toastify__toast--success {
+  background-color: #146c43 !important;
+  color: #fff !important;
+}
+#Home,
+#About,
+#Experience,
+#Skills,
+#Projects,
+#Contact {
+  width: 100%;
+  height: 100%;
+  color: black;
+  padding-top: 30px;
+  min-height: 100vh;
+}
+
+#Projects,
+#Contact {
+  min-height: 100vh;
+}
+
+/* #Contact {
+  background-color: #22ea8d;
+} */
+
+.navbar a {
+  cursor: pointer;
+}
+
+.navbar a:hover {
+  color: #22ea8d !important;
+}
+
+.navbar a.active {
+  color: #22ea8d !important;
+  border-bottom: 2px solid #22ea8d !important;
+}
+
+#About .card img,
+#Projects .card img {
+  transition: all 1s ease-in-out;
+}
+
+#About .card img:hover {
+  transform: scale(1.05);
+}
+
+#Projects .card .card-img-box {
+  max-height: 360px;
+  overflow: hidden;
+}
+
+#Projects .card img:hover {
+  transform: scale(1.1);
+}
+
+#Projects .card {
+  transition: all 1.05s ease-in-out;
+}
+
+#Projects .card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* .timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -21px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.3);
+} */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: #198754;
+  transform: translateX(-50%);
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 28px;
+  left: 98%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: #198754;
+  border-radius: 20%;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.3);
+}
+
+.row:nth-child(even) .timeline-dot {
+  left: 2%;
+  transform: translateX(-50%);
+}
+
+.timeline-content {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+.submitBtn .send-icon{
+  rotate: 15deg;
+}
+.follow-icon{
+  cursor: pointer;
+}
+.follow-icon a{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.follow-icon a:hover{
+  transform: translateY(-5px);
+}
+.follow-icon .github{
+  color: black;
+}
+/* .linkdn a svg{
+  color: #0a66c2;
+} */
+/* .linkdn :hover, 
+.naukri img:hover{
+ filter: invert(27%) sepia(92%) saturate(5000%) hue-rotate(340deg) brightness(90%) contrast(95%);
+} */
