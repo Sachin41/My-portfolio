@@ -40,7 +40,7 @@ export default function Experience() {
                 {experience.map((item, ind) => {
                     return (<div className="row my-5" key={ind}>
                         {ind % 2 !== 0 && <div className="col-md-6"></div>}
-                        <div className="col-md-6 position-relative" data-aos={ind % 2 === 0 ? "fade-right" : "fade-left"}>
+                        <div className="col-md-6 position-relative" data-aos={ind % 2 === 0 ? "fade-right" : "fade-left"} data-aos-once="false">
                             <div className="timeline-content bg-white p-4 rounded-3 shadow">
                                 <div className="fs-1  ">
                                     <FaBriefcase className="me-2 text-success float-start" />

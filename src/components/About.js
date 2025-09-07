@@ -1,18 +1,35 @@
-import photo from "../Images/photo.jpg";
 import {Element} from "react-scroll";
 
 export default function About({name}) {
+       const education = [
+        {
+            year: '2014-2017',
+            title: 'Master in Computer Applications',
+            institution: 'Hyderabad Central University'
+        },
+        {
+            year: '2010-2013',
+            title: 'Bachelor in Science',
+            institution: 'CCS University Meerut'
+        }
+    ];
     return (
         <Element className="container" id="About" name="About">
             <div className="row">
-                <div className="col-sm-5" data-aos="fade-up">
-                    <div className="card">
-                        <div className="card-body p-1">
-                            <img src={photo} alt="SK" className="img-fluid rounded-3" width="100%" height="100%" />
-                        </div>
-                    </div>
+                                <div className='col-sm-5' data-aos="fade-right" data-aos-once="false">
+                    <h5 className="text-success pt-3">Qualification</h5>
+                    <h3 className="fw-bold">Education</h3>
+                    {education.map((item, ind) => {
+                        return (<div className='pt-3' key={ind}>
+                            <label className="text-success fs-6">{item.year}</label>
+                            <h5 className="fw-bold">{item.title}</h5>
+                            <h6 className="fw-normal">{item.institution}</h6>
+                            {/* <p className='fw-light'>Secured CGPA: 6.2</p> */}
+                        </div>);
+                    })
+                    }
                 </div>
-                <div className="col-sm-7" data-aos="fade-up">
+                <div className="col-sm-7" data-aos="fade-left" data-aos-once="false">
                     <div className="card  border-0 ps-lg-5">
                         <div className="card-body ps-lg-5">
                             <h5 className="card-title text-success">About Us</h5>

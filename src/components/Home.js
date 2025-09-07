@@ -4,7 +4,7 @@ export default function Home({name}) {
     return (
         <Element className="container" id="Home" name="Home">
             <div className="row">
-                <div className="col-sm-7" data-aos="fade-up">
+                <div className="col-sm-7" data-aos="fade-right" data-aos-once="false">
                     <div className="card  border-0 pt-lg-5">
                         <div className="card-body pt-lg-5">
                             <h6 className="card-title pt-lg-5 text-success">Get Ready to Start Work</h6>
@@ -19,7 +19,7 @@ export default function Home({name}) {
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-5" data-aos="fade-up">
+                <div className="col-sm-5" data-aos="fade-left" data-aos-once="false">
                     <div className="card border-0 pt-lg-5">
                         <div className="card-body">
                             <img src={photo} alt="SK" className="img-fluted rounded-3" width="100%" height="100%"/>

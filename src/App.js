@@ -2,8 +2,6 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -17,6 +15,7 @@ function App() {
         AOS.init({
             duration: 800,
             offset: 120,
+            easing: "ease-in-out",
             once: true,
         });
     }, []);

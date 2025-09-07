@@ -76,7 +76,7 @@ export default function Contact() {
             <h6 className="text-center text-secondary">Have a project in mind ? I'd love to hear about it. Let's discuss how we can <br />bring your ideas to life</h6>
             <div className="row my-4">
                 {/* Contact Information  */}
-                <div className="col-sm-6" data-aos="fade-up">
+                <div className="col-sm-6" data-aos="fade-right" data-aos-once="false">
                     <h4 className="mb-3">Contact Information</h4>
                     <p className="fsize-15 mb-3">I'm always intrested in new opportunity and exiciting projects. Whether you have and question or just want to say hi, i will try my best to get back to you! </p>
                     {contactInfo.map((contact, ind) => {
@@ -121,7 +121,7 @@ export default function Contact() {
                     </div>
                 </div>
                 {/* Contact form  */}
-                <div className="col-sm-6 ps-lg-4" data-aos="fade-up">
+                <div className="col-sm-6 ps-lg-4" data-aos="fade-left" data-aos-once="false">
                     <div className="card shadow-sm">
                         <div className="card-body">
                             <h4 className="card-title mb-3">Send Message</h4>

@@ -40,7 +40,7 @@ export default function Projects() {
             <div className="row row-cols-1 row-cols-md-3 g-4 mt-lg-4 mt-xs-2">
                 {projects.map(item => {
                     return (
-                        <div className="col" key={item.id} data-aos="fade-up">
+                        <div className="col" key={item.id} data-aos="zoom-in-down" data-aos-once="false">
                             <div className="card h-100 shadow-sm">
                                 <div className="card-img-box">
                                     <img src={item.image} className="card-img-top" alt={item.title} />

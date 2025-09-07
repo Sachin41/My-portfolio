@@ -2,8 +2,8 @@ import { Link } from "react-scroll"
 export default function Header({navItems}) {
     return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div className="container-fluid">
-                <Link className="navbar-brand" to="/" smooth="true">Sachin Kumar</Link>
+            <div className="container">
+                <Link className="navbar-brand fw-bold" to="/" smooth="true">S<span className="text-green">KUMAR</span></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

@@ -1,9 +1,17 @@
+
 .App {
   text-align: center;
 }
 
+.fsize-12 {
+  font-size: 12px !important;
+}
+
 .fsize-15 {
   font-size: 15px !important;
+}
+.text-green{
+  color: #16b55d !important;
 }
 .Toastify__toast--success {
   background-color: #146c43 !important;
@@ -28,20 +36,22 @@
 }
 
 /* #Contact {
-  background-color: #22ea8d;
+  background-color: #16b55d;
 } */
 
 .navbar a {
   cursor: pointer;
+  color: #fff;
+  font-weight: 500;
 }
 
 .navbar a:hover {
-  color: #22ea8d !important;
+  color: #16b55d !important;
 }
 
 .navbar a.active {
-  color: #22ea8d !important;
-  border-bottom: 2px solid #22ea8d !important;
+  color: #16b55d !important;
+  border-bottom: 2px solid #16b55d !important;
 }
 
 #About .card img,
