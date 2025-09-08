@@ -33,33 +33,35 @@ export default function Projects() {
         }
     ]
     return (
-        <Element className="container" id="Projects">
-            <h5 className="text-success text-center">Portfolio</h5>
-            <h3 className="text-center fw-bold">Featured Projects</h3>
-            <h6 className="text-center text-secondary">Here are some of my recent projects that showcase my skills and experties</h6>
-            <div className="row row-cols-1 row-cols-md-3 g-4 mt-lg-4 mt-xs-2">
-                {projects.map(item => {
-                    return (
-                        <div className="col" key={item.id} data-aos="zoom-in-down" data-aos-once="false">
-                            <div className="card h-100 shadow-sm">
-                                <div className="card-img-box">
-                                    <img src={item.image} className="card-img-top" alt={item.title} />
-                                </div>
-                                <div className="card-body">
-                                    <span className="badge bg-secondary mb-2">{item.category}</span>
-                                    <h5 className="card-title">{item.title}</h5>
-                                    <p className="card-text mb-2">{item.description}</p>
-                                    <div className="badgeGroup mb-3">
-                                        {item.technologies.map((tech, ind) => {
-                                            return <span className="badge rounded-pill bg-success me-1" key={ind}>{tech}</span>
-                                        })}
+        <Element className="container mt-4" id="Projects">
+            <div className="px-3">
+                <h5 className="text-success text-center">Portfolio</h5>
+                <h3 className="text-center fw-bold">Featured Projects</h3>
+                <h6 className="text-center text-secondary">Here are some of my recent projects that showcase my skills and experties</h6>
+                <div className="row row-cols-1 row-cols-md-3 g-4 mt-lg-4 mt-2">
+                    {projects.map(item => {
+                        return (
+                            <div className="col-md-4" key={item.id} data-aos="zoom-in-down" data-aos-once="false">
+                                <div className="card h-100 shadow-sm">
+                                    <div className="card-img-box">
+                                        <img src={item.image} className="card-img-top" alt={item.title} />
+                                    </div>
+                                    <div className="card-body">
+                                        <span className="badge bg-secondary mb-2">{item.category}</span>
+                                        <h5 className="card-title">{item.title}</h5>
+                                        <p className="card-text mb-2">{item.description}</p>
+                                        <div className="badgeGroup mb-3">
+                                            {item.technologies.map((tech, ind) => {
+                                                return <span className="badge rounded-pill bg-success me-1" key={ind}>{tech}</span>
+                                            })}
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>)
-                })}
+                            </div>)
+                    })}
+                </div>
+                <div className="text-center"><Link to="/" className="btn btn-success mt-2">View All Projects</Link></div>
             </div>
-            <div className="text-center"><Link to="/" className="btn btn-success mt-2">View All Projects</Link></div>
         </Element>
     );
 }

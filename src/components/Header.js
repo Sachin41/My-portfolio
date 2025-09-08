@@ -11,7 +11,7 @@ export default function Header({navItems}) {
                     <ul className="navbar-nav ms-auto">
                         {navItems.map((item, ind) => {
                             return (<li className="nav-item" key={ind}>
-                                <Link className="nav-link" to={item.name} smooth="true" duration={ind*0.1}
+                                <Link className="nav-link" to={item.name} smooth="true" duration={500}
                                 offset={-60} activeClass="active" spy="true">{item.name}</Link>
                             </li>)
 

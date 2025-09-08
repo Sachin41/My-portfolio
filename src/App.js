@@ -28,7 +28,7 @@ function App() {
           { name: "Contact" }
       ];
   return (
-    <div>
+    <div style={{overflowX: 'hidden'}}>
       <Header navItems={navItems} />
         <Home />
         <About />
