@@ -1,4 +1,3 @@
-
 .App {
   text-align: center;
 }
@@ -10,13 +9,16 @@
 .fsize-15 {
   font-size: 15px !important;
 }
-.text-green{
+
+.text-green {
   color: #16b55d !important;
 }
+
 .Toastify__toast--success {
   background-color: #146c43 !important;
   color: #fff !important;
 }
+
 #Home,
 #About,
 #Experience,
@@ -53,7 +55,8 @@
 #Projects .card img {
   transition: all 1s ease-in-out;
 }
-#Home .card img{
+
+#Home .card img {
   padding: 4px;
   border-color: #16b55d;
 }
@@ -130,21 +133,24 @@
   transform: translateY(-10px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
-.submitBtn .send-icon{
+
+.submitBtn .send-icon {
   rotate: 15deg;
 }
-.follow-icon{
+
+.follow-icon a {
   cursor: pointer;
-}
-.follow-icon a{
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.follow-icon a:hover{
+
+.follow-icon a:hover {
   transform: translateY(-5px);
 }
-.follow-icon .github{
+
+.follow-icon .github {
   color: black;
 }
+
 /* .linkdn a svg{
   color: #0a66c2;
 } */
